@@ -25,12 +25,12 @@ echo "\033[0;33mDownloading latest version\033[0m"
 cd ~/.clienTV
 git pull
 
-echo "\033[0;34mUsing the clienTV template file and adding it to ~/.xbmc/userdata\033[0m"
-ln -s  ~/.clienTV/autoexec.py ~/.xbmc/userdata/autoexec.py
-# cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
-
-#echo "\033[0;34mCopying your current PATH and adding it to the end of ~/.zshrc for you.\033[0m"
-#echo "export PATH=\$PATH:$PATH" >> ~/.clienTV
+if [ ! -f ~/.xbmc/userdata/autoexec.py ]
+then
+  echo "\033[0;34mUsing the clienTV template file and adding it to ~/.xbmc/userdata\033[0m"
+  ln -s  ~/.clienTV/autoexec.py ~/.xbmc/userdata/autoexec.py
+  # cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
+fi
 
 echo "\033[0;34mTime to restart your system!\033[0m"
 
@@ -42,5 +42,5 @@ echo "\033[0;32m"' |      _||   |___ |   | |    ___||  _    |  |   |  |       | 
 echo "\033[0;32m"' |     |_ |       ||   | |   |___ | | |   |  |   |   |     |  '"\033[0m"
 echo "\033[0;32m"' |_______||_______||___| |_______||_|  |__|  |___|    |___|   '"\033[0m"
 
-#/opt/vc/bin/tvservice -o
-#sudo shutdown -r now
+/opt/vc/bin/tvservice -o
+sudo shutdown -r now
