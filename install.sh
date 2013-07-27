@@ -6,6 +6,12 @@ then
   then
     echo "\033[0;33mcreating directories\033[0m"
     mkdir ~/movies
+    cd ~/movies
+
+    echo "\033[0;33mdownloading sample videos\033[0m"
+	wget https://www.dropbox.com/sh/aca6ga51qkflqmr/G_yGvL96xV/Amoleer3.mov
+	wget https://www.dropbox.com/sh/aca6ga51qkflqmr/bEBVvJkXPl/Barrio%2018-3.mov
+	wget https://www.dropbox.com/sh/aca6ga51qkflqmr/iAz0T8zDBk/ConsultorioDental.mov
   fi
 
   echo "\033[0;33minstalling curl\033[0m"
@@ -13,6 +19,12 @@ then
 
   echo "\033[0;33minstalling git\033[0m"
   sudo apt-get install git
+
+  echo "\033[0;33minstalling wget\033[0m"
+  sudo apt-get install wget
+
+  echo "\033[0;33minstalling emacs\033[0m"
+  sudo apt-get install emacs
 
   echo "\033[0;34mCloning clienTV...\033[0m"
   hash git >/dev/null && /usr/bin/env git clone https://github.com/rodrigocuriel/clienTV.git ~/.clienTV || {
