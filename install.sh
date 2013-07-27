@@ -39,5 +39,5 @@ echo "\033[0;32m"' |      _||   |___ |   | |    ___||  _    |  |   |  |       | 
 echo "\033[0;32m"' |     |_ |       ||   | |   |___ | | |   |  |   |   |     |  '"\033[0m"
 echo "\033[0;32m"' |_______||_______||___| |_______||_|  |__|  |___|    |___|   '"\033[0m"
 
-/opt/vc/bin/tvservice -o
-sudo shutdown -r now
+#/opt/vc/bin/tvservice -o
+#sudo shutdown -r now
