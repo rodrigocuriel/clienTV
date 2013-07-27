@@ -1,27 +1,29 @@
-if [ -d ~/.clienTV ]
+if [ ! -d ~/.clienTV ]
 then
-  echo "\033[0;33mYou already have clienTV installed.\033[0m I'll update it to the latest version\033[0m"
-  cd ~/.clienTV
-  git pull
+  echo "\033[0;33mYou don't have clienTV installed.\033[0m I'll try to download it\033[0m"
+
+  echo "\033[0;33mcreating directories\033[0m"
+  mkdir ~/movies
+
+  echo "\033[0;33minstalling curl\033[0m"
+  sudo apt-get install curl
+
+  echo "\033[0;33minstalling git\033[0m"
+  sudo apt-get install git
+
+  echo "\033[0;34mCloning clienTV...\033[0m"
+  hash git >/dev/null && /usr/bin/env git clone https://github.com/rodrigocuriel/clienTV.git ~/.clienTV || {
+    echo "git not installed"
+    exit
+  }
+  
   cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
-  /opt/vc/bin/tvservice -o
-  sudo shutdown -r now
   exit
 fi
 
-echo "\033[0;33mYou don't have clienTV installed.\033[0m I'll try to download it\033[0m"
-
-echo "\033[0;33minstalling curl\033[0m"
-sudo apt-get install curl
-
-echo "\033[0;33minstalling git\033[0m"
-sudo apt-get install git
-
-echo "\033[0;34mCloning clienTV...\033[0m"
-hash git >/dev/null && /usr/bin/env git clone https://github.com/rodrigocuriel/clienTV.git ~/.clienTV || {
-  echo "git not installed"
-  exit
-}
+echo "\033[0;33mDownloading latest version\033[0m"
+cd ~/.clienTV
+git pull
 
 echo "\033[0;34mUsing the clienTV template file and adding it to ~/.xbmc/userdata\033[0m"
 cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
