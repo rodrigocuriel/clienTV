@@ -16,9 +16,6 @@ then
     echo "git not installed"
     exit
   }
-  
-  cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
-  exit
 fi
 
 echo "\033[0;33mDownloading latest version\033[0m"
@@ -26,10 +23,11 @@ cd ~/.clienTV
 git pull
 
 echo "\033[0;34mUsing the clienTV template file and adding it to ~/.xbmc/userdata\033[0m"
-cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
+ln -sf ~/.xbmc/userdata/autoexec.py ~/.clienTV/autoexec.py
+# cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
 
-echo "\033[0;34mCopying your current PATH and adding it to the end of ~/.zshrc for you.\033[0m"
-echo "export PATH=\$PATH:$PATH" >> ~/.clienTV
+#echo "\033[0;34mCopying your current PATH and adding it to the end of ~/.zshrc for you.\033[0m"
+#echo "export PATH=\$PATH:$PATH" >> ~/.clienTV
 
 echo "\033[0;34mTime to restart your system!\033[0m"
 
