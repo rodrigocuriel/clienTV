@@ -1,9 +1,5 @@
  clienTV
- =======
-
-first:
-
-sudo apt-get install git
+ ========
 
 <h3>The automatic installer… (do you trust me?)</h3>
 
