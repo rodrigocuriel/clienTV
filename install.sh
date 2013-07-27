@@ -2,9 +2,12 @@ if [ ! -d ~/.clienTV ]
 then
   echo "\033[0;33mYou don't have clienTV installed.\033[0m I'll try to download it\033[0m"
 
-  echo "\033[0;33mcreating directories\033[0m"
-  mkdir ~/movies
-
+  if [ ! -d ~/.clienTV ]
+  then
+    echo "\033[0;33mcreating directories\033[0m"
+    mkdir ~/movies
+  fi
+  
   echo "\033[0;33minstalling curl\033[0m"
   sudo apt-get install curl
 
