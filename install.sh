@@ -32,7 +32,7 @@ then
   # cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
 fi
 
-echo "\033[0;34mTime to restart your system!\033[0m"
+echo "\033[0;34mTime to restart your system, but first let's turn that huge TV off!\033[0m"
 
 echo "\033[0;32m"'  _______  ___      ___   _______  __    _  _______  __   __  '"\033[0m"
 echo "\033[0;32m"' |       ||   |    |   | |       ||  |  | ||       ||  | |  | '"\033[0m"
@@ -41,6 +41,9 @@ echo "\033[0;32m"' |       ||   |    |   | |   |___ |       |  |   |  |       | 
 echo "\033[0;32m"' |      _||   |___ |   | |    ___||  _    |  |   |  |       | '"\033[0m"
 echo "\033[0;32m"' |     |_ |       ||   | |   |___ | | |   |  |   |   |     |  '"\033[0m"
 echo "\033[0;32m"' |_______||_______||___| |_______||_|  |__|  |___|    |___|   '"\033[0m"
+
+echo "\033[0;32m"'  															'"\033[0m"
+echo "\033[0;32m"'Install script by @roocuriel'"\033[0m"
 
 /opt/vc/bin/tvservice -o
 sudo shutdown -r now
