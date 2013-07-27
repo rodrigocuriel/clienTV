@@ -26,6 +26,9 @@ then
   echo "\033[0;33minstalling emacs\033[0m"
   sudo apt-get install emacs
 
+  echo "\033[0;33minstalling rsync\033[0m"
+  sudo apt-get install rsync
+
   echo "\033[0;34mCloning clienTV...\033[0m"
   hash git >/dev/null && /usr/bin/env git clone https://github.com/rodrigocuriel/clienTV.git ~/.clienTV || {
     echo "git not installed"
