@@ -4,6 +4,8 @@ then
   cd ~/.clienTV
   git pull
   cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
+  /opt/vc/bin/tvservice -o
+  sudo shutdown -r now
   exit
 fi
 
