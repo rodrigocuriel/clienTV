@@ -26,7 +26,7 @@ cd ~/.clienTV
 git pull
 
 echo "\033[0;34mUsing the clienTV template file and adding it to ~/.xbmc/userdata\033[0m"
-ln -sf  ~/.clienTV/autoexec.py ~/.xbmc/userdata/autoexec.py
+ln -s  ~/.clienTV/autoexec.py ~/.xbmc/userdata/autoexec.py
 # cp ~/.clienTV/autoexec.py ~/.xbmc/userdata/
 
 #echo "\033[0;34mCopying your current PATH and adding it to the end of ~/.zshrc for you.\033[0m"
