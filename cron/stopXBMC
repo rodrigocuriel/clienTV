@@ -1,2 +1,2 @@
-sudo initctl stop xbmc
 /opt/vc/bin/tvservice -o
+sudo initctl stop xbmc
