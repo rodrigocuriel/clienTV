@@ -49,8 +49,8 @@ cd ~/.clienTV
 git pull
  
 echo "\033[0;33m install new cron file \033[0m"
-chmod +x -R ~/.clientTV/cron/
-crontab ~/.clientTV/cronjobs
+chmod +x -R ~/.clienTV/cron/
+crontab ~/.clienTV/cronjobs
 
 if [ ! -f ~/.xbmc/userdata/autoexec.py ]
 then
