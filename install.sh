@@ -43,14 +43,14 @@ then
   echo "\033[0;33mdownloading sample playlist\033[0m"
   
 fi
- 
-echo "\033[0;33m install new cron file \033[0m"
-chmod +x -R ~/.clientTV/cron/
-crontab ~/.clientTV/cronjobs
 
 echo "\033[0;33mDownloading latest version\033[0m"
 cd ~/.clienTV
 git pull
+ 
+echo "\033[0;33m install new cron file \033[0m"
+chmod +x -R ~/.clientTV/cron/
+crontab ~/.clientTV/cronjobs
 
 if [ ! -f ~/.xbmc/userdata/autoexec.py ]
 then
