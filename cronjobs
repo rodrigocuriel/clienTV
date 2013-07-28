@@ -1,1 +1,3 @@
-00 09 * * 1-5 echo hello
+15 * * * * ~/.clienTV/startXBMC
+45 * * * * ~/.clienTV/stopXBMC
+0 * * * * ~/.clienTV/download001

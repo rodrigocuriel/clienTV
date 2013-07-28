@@ -1,0 +1,2 @@
+sudo initctl stop xbmc
+/opt/vc/bin/tvservice -o
