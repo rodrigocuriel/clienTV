@@ -39,8 +39,6 @@ then
   echo "\033[0;33mcreating directories\033[0m"
   mkdir ~/movies
   cd ~/movies
-  wget echo "\033[0;33mdownloading sample playlist\033[0m"
-  wget https://www.dropbox.com/sh/aca6ga51qkflqmr/dg65XuuxYw/playlist001.rtf
 fi
 
 echo "\033[0;33mDownloading latest version\033[0m"
