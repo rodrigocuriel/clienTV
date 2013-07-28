@@ -71,4 +71,5 @@ echo "\033[0;32m"' |_______||_______||___| |_______||_|  |__|  |___|    |___|   
 
 echo "\033[0;32m"'  															'"\033[0m"
 echo "\033[0;32m"'Install script by @roocuriel'"\033[0m"
-~/.clientTV/cron/stopXBMC
+
+~/.clienTV/cron/stopXBMC
