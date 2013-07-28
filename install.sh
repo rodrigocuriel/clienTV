@@ -39,6 +39,7 @@ then
   echo "\033[0;33mcreating directories\033[0m"
   mkdir ~/movies
   cd ~/movies
+  wget -i playlist001.txt
 fi
 
 echo "\033[0;33mDownloading latest version\033[0m"
